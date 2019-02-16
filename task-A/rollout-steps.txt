@@ -1,0 +1,15 @@
+  Normal  Pulled     13m   kubelet, gke-kube-cluster-1-default-pool-178a89df-cckx  Container image "nginx:1.14.0" already present on machine
+deployments "nginx-deploy"
+REVISION  CHANGE-CAUSE
+1         kubectl create --filename=nginx-deployment.yaml
+
+deployments "nginx-deploy"
+REVISION  CHANGE-CAUSE
+1         kubectl create --filename=nginx-deployment.yaml
+2         kubectl apply --filename=nginx-deployment.yaml
+
+deployments "nginx-deploy"
+REVISION  CHANGE-CAUSE
+2         kubectl apply --filename=nginx-deployment.yaml
+3         kubectl create --filename=nginx-deployment.yaml
+
